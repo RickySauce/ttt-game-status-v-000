@@ -25,7 +25,7 @@ def won?(board)
     position_2 = board[index_2]
     position_3 = board[index_3]
 
-    position_1 == position_2 && position_2 == position_3 && position_taken?(board, index_1)
+    board[index_1] ==  board[index_2] &&  board[index_2] == board[index_3] && position_taken?(board,index_1)
   end
 end
 
